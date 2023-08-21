@@ -98,6 +98,16 @@ function initChamadoTable() {
 // Adiciona um ouvinte de evento para o formulário de chamados
 document.getElementById("chamado-form").addEventListener("submit", addChamado);
 
+document.addEventListener('keydown', function(event) {
+if (event.ctrlKey && event.key === 'u') {
+event.preventDefault();
+alert('A função "Ctrl + U" está desativada nesta página.');
+}
+});
 
+document.addEventListener('contextmenu', function(event) {
+event.preventDefault();
+alert('O botão direito do mouse está desativado nesta página.');
+});
 
 
