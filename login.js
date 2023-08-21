@@ -100,16 +100,6 @@ function updateChamadoTable(chamados) {
     }
 }
 
-// Função para mostrar ou ocultar a área de anotações para um chamado específico
-function toggleAnotacoes(chamadoIndex) {
-    const anotacoesContainer = document.getElementsByClassName("anotacoes-container")[chamadoIndex];
-    if (anotacoesContainer.style.display === "none" || anotacoesContainer.style.display === "") {
-        anotacoesContainer.style.display = "block";
-    } else {
-        anotacoesContainer.style.display = "none";
-    }
-}
-
 document.addEventListener('keydown', function(event) {
 if (event.ctrlKey && event.key === 'u') {
 event.preventDefault();
@@ -121,3 +111,14 @@ document.addEventListener('contextmenu', function(event) {
 event.preventDefault();
 alert('O botão direito do mouse está desativado nesta página.');
 });
+
+// Função para mostrar ou ocultar a área de anotações para um chamado específico
+function toggleAnotacoes(chamadoIndex) {
+    const anotacoesContainer = document.getElementsByClassName("anotacoes-container")[chamadoIndex];
+    if (anotacoesContainer.style.display === "none" || anotacoesContainer.style.display === "") {
+        anotacoesContainer.style.display = "block";
+    } else {
+        anotacoesContainer.style.display = "none";
+    }
+}
+
