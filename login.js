@@ -100,18 +100,13 @@ function updateChamadoTable(chamados) {
     }
 }
 
-document.addEventListener('keydown', function(event) {
-if (event.ctrlKey && event.key === 'u') {
-event.preventDefault();
-alert('A função "Ctrl + U" está desativada nesta página.');
+function blockCtrlU() {
+  document.onkeydown = function(e) {
+    if (e.keyCode === 85 && e.ctrlKey) {
+      e.preventDefault();
+    }
+  };
 }
-});
-
-document.addEventListener('contextmenu', function(event) {
-event.preventDefault();
-alert('O botão direito do mouse está desativado nesta página.');
-});
-
 // Função para mostrar ou ocultar a área de anotações para um chamado específico
 function toggleAnotacoes(chamadoIndex) {
     const anotacoesContainer = document.getElementsByClassName("anotacoes-container")[chamadoIndex];
