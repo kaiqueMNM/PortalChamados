@@ -89,15 +89,6 @@ function createTerminarButton(chamadoIndex) {
 // Inicializa a tabela de chamados quando a página é carregada
 initChamadoTable();
 
-// Função para inicializar a tabela de chamados a partir do localStorage
-function initChamadoTable() {
-    const chamados = JSON.parse(localStorage.getItem("chamados")) || [];
-    updateChamadoTable(chamados);
-}
-
-// Adiciona um ouvinte de evento para o formulário de chamados
-document.getElementById("chamado-form").addEventListener("submit", addChamado);
-
 document.addEventListener('keydown', function(event) {
 if (event.ctrlKey && event.key === 'u') {
 event.preventDefault();
@@ -109,5 +100,15 @@ document.addEventListener('contextmenu', function(event) {
 event.preventDefault();
 alert('O botão direito do mouse está desativado nesta página.');
 });
+
+// Função para inicializar a tabela de chamados a partir do localStorage
+function initChamadoTable() {
+    const chamados = JSON.parse(localStorage.getItem("chamados")) || [];
+    updateChamadoTable(chamados);
+}
+
+// Adiciona um ouvinte de evento para o formulário de chamados
+document.getElementById("chamado-form").addEventListener("submit", addChamado);
+
 
 
