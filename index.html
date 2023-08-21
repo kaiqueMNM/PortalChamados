@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Adicione os links para as bibliotecas do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="website icon" type="png" href="backg.webp"> 
+</head>
+<body class="d-flex align-items-center vh-100">
+
+    <div class="hamburger-container">
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div> 
+  
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-4">LOGIN <img class="logo" src="logo.png" alt="logo"></h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Usuário:</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Digite o email">
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Digite a senha" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+       
+      </form>
+      <span class="damas"></span>
+    </div>
+  </div>
+</div>
+
+<script src="login.js"></script> 
+</body>
+</html>

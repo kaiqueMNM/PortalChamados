@@ -1,0 +1,159 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background-image: url(backg.webp); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    background-color: rgba(133, 131, 131, 0.801);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+  
+  /* Estilos do formulário */
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+  }  
+  /* Estilos responsivos */
+  @media (max-width: 576px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  .damas {
+    font-family: "Times New Roman", serif; /* Nova fonte desejada */
+    font-size: 16px;
+    color: rgb(41, 41, 41);
+    transition: color 0.3s;
+    cursor: default;
+  }
+  
+  .damas:hover {
+    color: rgb(25, 0, 255);
+  }
+
+  /* Estilize o banner de cookies em forma de balãozinho */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+/* Estilize o banner de cookies em forma de balãozinho */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+/* Estilize o banner de cookies em forma de balãozinho */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    font-size: 14px;
+}
+
+/* Estilize a seta do balãozinho */
+.cookie-banner::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f9f9f9 transparent;
+}
+
+/* Estilize os botões */
+.cookie-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cookie-accept {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cookie-deny {
+    background-color: #F44336;
+    color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+.hamburger-container {
+  margin-top: -750px;
+}
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+}
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: #333;
+}
+
+  
+  
+  

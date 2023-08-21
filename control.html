@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Chamados</title>
+    <link rel="website icon" type="png" href="backg.webp">
+    <button class="btn btn-primary" onclick="window.location.href = 'index.html';">Sair</button>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <h2>Sistema de Controle de Chamados</h2>
+    <div class="container">
+        <form id="chamado-form">
+            <label for="motivo">Motivo:</label>
+            <input type="text" id="motivo" required>
+            
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="Aberto">Aberto</option>
+                <option value="Em Progresso">Em Progresso</option>
+                <option value="Aguardando o MGI">Aguardando o MGI</option>
+            </select>
+
+            <label for="numero-chamado">Número do Chamado:</label>
+              <input type="text" id="numero-chamado" required>
+
+
+            <button type="submit">Adicionar Chamado</button>
+            
+        </form>
+
+        <table id="chamado-table">
+            <thead>
+                <tr>
+                    <th>Número do Chamado</th>
+                    <th>Status</th>
+                    <th>Motivo</th> 
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui serão inseridos os chamados -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
