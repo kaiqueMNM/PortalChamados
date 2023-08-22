@@ -116,4 +116,21 @@ function toggleAnotacoes(chamadoIndex) {
         anotacoesContainer.style.display = "none";
     }
 }
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Evita o comportamento padrão do formulário (submit)
+    login(); // Chama a função de login quando a tecla "Enter" for pressionada
+  }
+});
 
+document.addEventListener('keydown', function(event) {
+if (event.ctrlKey && event.key === 'u') {
+event.preventDefault();
+alert('A função "Ctrl + U" está desativada nesta página.');
+}
+});
+
+document.addEventListener('contextmenu', function(event) {
+event.preventDefault();
+alert('O botão direito do mouse está desativado nesta página.');
+});
