@@ -14,8 +14,21 @@ body {
 
 h2 {
     text-align: center;
-    background-color: rgb(80, 80, 247);
+    background-color: transparent;
+    overflow: hidden; /* Isso vai esconder o texto antes da animação */
+    white-space: nowrap; /* Isso vai garantir que o texto seja exibido em uma única linha */
+    animation: typing 4s steps(40) 1s forwards; /* 4s de duração, 40 passos (caracteres) e início após 1s */
 }
+
+@keyframes typing {
+    from {
+        width: 0; /* Começa com largura zero (texto escondido) */
+    }
+    to {
+        width: 100%; /* Termina com largura total (texto completamente visível) */
+    }
+}
+
 
 form {
     margin-bottom: 20px;
@@ -45,5 +58,11 @@ table, th, td {
 th {
     background-color: #ffffff;
     text-align: left;
+}
+.my-footer {
+    background-color:transparent;
+    color: #8a8a8a;
+    text-align: center;
+    padding: 10px;
 }
 
