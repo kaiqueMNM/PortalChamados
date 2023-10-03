@@ -76,7 +76,7 @@ function markChamadoAsFinalizado(chamadoIndex) {
 // Função para criar botão "Terminar Chamado" com confirmação
 function createTerminarButton(chamadoIndex) {
     const button = document.createElement("button");
-    button.innerText = "Terminar Chamado";
+    button.innerText = "Excluir";
     button.addEventListener("click", function () {
         const confirmacao = confirm("Você deseja realmente finalizar este chamado?");
         if (confirmacao) {
