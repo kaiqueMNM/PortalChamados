@@ -126,7 +126,7 @@ document.addEventListener('keydown', function(event) {
 document.addEventListener('keydown', function(event) {
 if (event.ctrlKey && event.key === 'u') {
 event.preventDefault();
-alert('A função "Ctrl + U" está desativada nesta página.');
+alert('A função "Ctrl + U" está desativada nesta página.'); 
 }
 });
 
